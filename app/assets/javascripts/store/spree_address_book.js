@@ -1,4 +1,4 @@
-//= require store/spree_core
+//= require admin/spree_backend
 
 (function($) {
   $(document).ready(function(){
