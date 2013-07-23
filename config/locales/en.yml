@@ -3,6 +3,7 @@
 
 en:
   spree:
+    address: "Address"
     address_book:
       other_address: "Other address"
       add_new_shipping_address: "Add new shipping address"
