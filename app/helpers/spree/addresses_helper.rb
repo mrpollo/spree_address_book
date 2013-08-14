@@ -5,7 +5,7 @@ module Spree::AddressesHelper
       if handler
         handler.call
       else
-        is_required = Spree::Address.required_fields.include?(method)
+        is_required = Spree::Address.required_fields.include?(method) || (method == :phone && form.object.phone_required?)
         separator = is_required ? '<span class="req">*</span><br />' : '<br />'
         form.label(method) + separator.html_safe +
         form.text_field(method, :class => is_required ? 'required' : nil)

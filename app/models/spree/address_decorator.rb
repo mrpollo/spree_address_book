@@ -40,4 +40,9 @@ Spree::Address.class_eval do
       update_column :deleted_at, Time.now
     end
   end
+
+  # Accessor for Spree's private method
+  def phone_required?
+    require_phone?
+  end
 end
