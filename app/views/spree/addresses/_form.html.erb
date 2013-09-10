@@ -24,7 +24,7 @@
                             :disabled => !have_states}.merge(autocomplete_attribute(:state_id))) +
          address_form.text_field(:state_name,
                             {:class => !have_states ? 'required' : 'hidden',
-                            :disabled => have_states)}.merge(autocomplete_attribute(:state_id))
+                            :disabled => have_states}.merge(autocomplete_attribute(:state_id)))
          ].join.gsub('"', "'").gsub("\n", "")
       %>
       <%= javascript_tag do -%>
