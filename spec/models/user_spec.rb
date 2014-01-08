@@ -17,5 +17,4 @@ describe Spree::User do
       user.addresses.should eq([address2, address])
     end
   end
-
 end

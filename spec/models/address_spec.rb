@@ -49,5 +49,4 @@ describe Spree::Address do
       Spree::Address.where(["id = (?)", address2.id]).should_not be_empty
     end
   end
-
 end

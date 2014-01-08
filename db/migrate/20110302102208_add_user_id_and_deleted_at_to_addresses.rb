@@ -9,12 +9,12 @@ class AddUserIdAndDeletedAtToAddresses < ActiveRecord::Migration
   def self.down
     change_table addresses_table_name do |t|
       t.remove :deleted_at
-      t.remove :user_id    
+      t.remove :user_id
     end
   end
-  
+
   private
-  
+
   def self.addresses_table_name
     table_exists?('addresses') ? :addresses : :spree_addresses
   end

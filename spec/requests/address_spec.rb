@@ -17,5 +17,4 @@ describe 'Addresses' do
       page.should have_content(I18n.t(:new_shipping_address))
     end
   end
-
 end

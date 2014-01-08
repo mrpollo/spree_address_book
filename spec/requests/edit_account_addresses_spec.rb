@@ -16,7 +16,7 @@ describe "User editing addresses for his account" do
   end
 
   it "should be able to add address" do
-    
+
   end
 
   it "should be able to edit address", :js => true do
